@@ -51,7 +51,7 @@ export function ContactSection() {
             transformar a ideia em uma solução web.
           </p>
 
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-2">
             <a
               href="mailto:[SEU_EMAIL]"
               className="group flex items-center gap-3 rounded-lg p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus"
