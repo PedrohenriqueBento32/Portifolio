@@ -1,11 +1,10 @@
 import { SectionContainer } from "@/components/ui/SectionContainer";
-import { ContactForm } from "./ContactForm";
 import { Mail, MessageCircle, Linkedin, Github } from "lucide-react";
 
 export function ContactSection() {
   return (
     <SectionContainer id="contato">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+      <div className="grid grid-cols-1 gap-12 lg:gap-20">
         
         {/* Contact Info */}
         <div>
@@ -69,15 +68,6 @@ export function ContactSection() {
             </div>
           </div>
         </div>
-
-        {/* Contact Form */}
-        <div className="bg-[#0b1120] p-6 md:p-8 rounded-[20px] border border-border">
-          <h3 className="text-2xl font-bold font-display text-foreground mb-6">
-            Envie uma mensagem
-          </h3>
-          <ContactForm />
-        </div>
-
       </div>
     </SectionContainer>
   );
