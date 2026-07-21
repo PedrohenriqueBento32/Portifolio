@@ -3,8 +3,10 @@
   "outputDirectory": "artifacts/portfolio/dist/public",
   "installCommand": "pnpm install --frozen-lockfile",
   "framework": null,
-  "env": {
-    "PORT": "3000",
-    "BASE_PATH": "/"
+  "build": {
+    "env": {
+      "PORT": "3000",
+      "BASE_PATH": "/"
+    }
   }
 }
