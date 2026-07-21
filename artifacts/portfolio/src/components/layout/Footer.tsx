@@ -18,7 +18,7 @@ export function Footer() {
       </div>
 
       <div className="mx-auto flex w-full max-w-6xl flex-col md:flex-row justify-between ...">
-       <p className="text-xs text-text-muted md:text-right">
+       <p className="text-xs text-text-muted md:text-left">
           &copy; {currentYear} Desenvolvido por Pedro com React e TypeScript.
         </p>
       </div>
