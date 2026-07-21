@@ -17,8 +17,8 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mt-3 px-5 text-center text-xs text-text-muted">
-        <p>
+      <div className="mx-auto flex w-full max-w-6xl flex-col md:flex-row justify-between ...">
+       <p className="text-xs text-text-muted md:text-right">
           &copy; {currentYear} Desenvolvido por Pedro com React e TypeScript.
         </p>
       </div>
