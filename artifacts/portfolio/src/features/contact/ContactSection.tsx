@@ -1,5 +1,15 @@
 import { SectionContainer } from "@/components/ui/SectionContainer";
-import { CheckCircle2, Github, LifeBuoy, Linkedin, Mail, MessageCircle, MonitorSmartphone, Search, Sparkles } from "lucide-react";
+import {
+  CheckCircle2,
+  Github,
+  LifeBuoy,
+  Linkedin,
+  Mail,
+  MessageCircle,
+  MonitorSmartphone,
+  Search,
+  Sparkles,
+} from "lucide-react";
 
 const benefits = [
   {
@@ -29,26 +39,35 @@ export function ContactSection() {
     <SectionContainer id="contato">
       <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold font-display text-foreground mb-6">
+          <h2 className="mb-6 font-display text-3xl font-bold text-foreground md:text-4xl">
             Vamos conversar sobre sua ideia?
           </h2>
-          <div className="h-1 w-20 bg-primary rounded mb-8"></div>
 
-          <p className="text-lg text-text-secondary leading-relaxed mb-10">
-            Conte-me um pouco sobre o que você precisa. Podemos conversar sobre o projeto, entender os objetivos e avaliar a melhor forma de transformar a ideia em uma solução web.
+          <div className="mb-8 h-1 w-20 rounded bg-primary" />
+
+          <p className="mb-10 text-lg leading-relaxed text-text-secondary">
+            Conte-me um pouco sobre o que você precisa. Podemos conversar sobre
+            o projeto, entender os objetivos e avaliar a melhor forma de
+            transformar a ideia em uma solução web.
           </p>
 
-          <div className="space-y-6">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             <a
               href="mailto:[SEU_EMAIL]"
-              className="flex items-center gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus rounded-lg p-1 -ml-1"
+              className="group flex items-center gap-3 rounded-lg p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus"
             >
-              <div className="w-12 h-12 rounded-full bg-surface-elevated border border-border flex items-center justify-center text-text-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-colors">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border bg-surface-elevated text-text-primary transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
                 <Mail size={20} />
               </div>
-              <div>
-                <span className="block text-sm text-text-muted font-medium mb-0.5">E-mail</span>
-                <span className="block font-medium text-foreground group-hover:text-primary transition-colors">[SEU_EMAIL]</span>
+
+              <div className="min-w-0">
+                <span className="mb-0.5 block text-sm font-medium text-text-muted">
+                  E-mail
+                </span>
+
+                <span className="block truncate font-medium text-foreground transition-colors group-hover:text-primary">
+                  [SEU_EMAIL]
+                </span>
               </div>
             </a>
 
@@ -56,37 +75,66 @@ export function ContactSection() {
               href="https://wa.me/[SEU_WHATSAPP]"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus rounded-lg p-1 -ml-1"
+              className="group flex items-center gap-3 rounded-lg p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus"
             >
-              <div className="w-12 h-12 rounded-full bg-surface-elevated border border-border flex items-center justify-center text-text-primary group-hover:bg-[#25D366] group-hover:text-white group-hover:border-[#25D366] transition-colors">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border bg-surface-elevated text-text-primary transition-colors group-hover:border-[#25D366] group-hover:bg-[#25D366] group-hover:text-white">
                 <MessageCircle size={20} />
               </div>
-              <div>
-                <span className="block text-sm text-text-muted font-medium mb-0.5">WhatsApp</span>
-                <span className="block font-medium text-foreground group-hover:text-[#25D366] transition-colors">[SEU_WHATSAPP]</span>
+
+              <div className="min-w-0">
+                <span className="mb-0.5 block text-sm font-medium text-text-muted">
+                  WhatsApp
+                </span>
+
+                <span className="block truncate font-medium text-foreground transition-colors group-hover:text-[#25D366]">
+                  [SEU_WHATSAPP]
+                </span>
               </div>
             </a>
 
-            <div className="flex items-center gap-4 mt-8 pt-8 border-t border-border">
-              <a
-                href="[URL_DO_LINKEDIN]"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-surface-elevated border border-border flex items-center justify-center text-text-secondary hover:text-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} />
-              </a>
-              <a
-                href="[URL_DO_GITHUB]"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-surface-elevated border border-border flex items-center justify-center text-text-secondary hover:text-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus transition-colors"
-                aria-label="GitHub"
-              >
-                <Github size={18} />
-              </a>
-            </div>
+            <a
+              href="[URL_DO_LINKEDIN]"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 rounded-lg p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus"
+              aria-label="LinkedIn"
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border bg-surface-elevated text-text-primary transition-colors group-hover:border-[#0A66C2] group-hover:bg-[#0A66C2] group-hover:text-white">
+                <Linkedin size={20} />
+              </div>
+
+              <div className="min-w-0">
+                <span className="mb-0.5 block text-sm font-medium text-text-muted">
+                  LinkedIn
+                </span>
+
+                <span className="block truncate font-medium text-foreground transition-colors group-hover:text-[#0A66C2]">
+                  Meu perfil
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="[URL_DO_GITHUB]"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 rounded-lg p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus"
+              aria-label="GitHub"
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border bg-surface-elevated text-text-primary transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
+                <Github size={20} />
+              </div>
+
+              <div className="min-w-0">
+                <span className="mb-0.5 block text-sm font-medium text-text-muted">
+                  GitHub
+                </span>
+
+                <span className="block truncate font-medium text-foreground transition-colors group-hover:text-primary">
+                  Meus projetos
+                </span>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -103,11 +151,14 @@ export function ContactSection() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                     <Icon size={20} />
                   </div>
+
                   <CheckCircle2 size={18} className="text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold font-display text-foreground">
+
+                <h3 className="font-display text-lg font-semibold text-foreground">
                   {benefit.title}
                 </h3>
+
                 <p className="mt-2 text-sm leading-relaxed text-text-secondary">
                   {benefit.description}
                 </p>
