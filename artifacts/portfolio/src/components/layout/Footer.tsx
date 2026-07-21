@@ -4,17 +4,23 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full py-8 md:py-12 border-t border-border bg-background mt-20">
-      <div className="mx-auto w-full max-w-[1280px] px-5 md:px-8 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-6">
-        
-        <div className="flex flex-col items-center md:items-start gap-1">
-          <span className="text-xl font-bold font-display text-foreground">Pedro<span className="text-primary">.</span></span>
-          <span className="text-sm text-text-muted">Desenvolvedor Full Stack</span>
+    <footer className="w-full border-t border-border bg-background mt-10 py-5 md:py-6">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-3 px-5 md:flex-row md:px-8 lg:px-10">
+        <div className="flex flex-col items-center gap-0 md:items-start">
+          <span className="font-display text-lg font-bold text-foreground md:text-xl">
+            Pedro<span className="text-primary">.</span>
+          </span>
+
+          <span className="text-sm leading-none text-text-muted">
+            Desenvolvedor Full Stack
+          </span>
         </div>
       </div>
-      
-      <div className="mt-8 text-center text-xs text-text-muted px-5">
-        <p>&copy; {currentYear} Desenvolvido por Pedro com React e TypeScript.</p>
+
+      <div className="mt-3 px-5 text-center text-xs text-text-muted">
+        <p>
+          &copy; {currentYear} Desenvolvido por Pedro com React e TypeScript.
+        </p>
       </div>
     </footer>
   );
