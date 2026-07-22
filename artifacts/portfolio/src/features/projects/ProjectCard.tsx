@@ -43,17 +43,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {project.summary}
         </p>
 
-        <div className="space-y-4 mb-8">
-          <div>
-            <span className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-1">Problema</span>
-            <p className="text-sm text-text-secondary">{project.context}</p>
-          </div>
-          <div>
-            <span className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-1">Solução</span>
-            <p className="text-sm text-text-secondary">{project.solution}</p>
-          </div>
-        </div>
-
         <div className="mt-auto">
           <div className="flex flex-wrap gap-2 mb-6">
             {project.technologies.map((tech, i) => (

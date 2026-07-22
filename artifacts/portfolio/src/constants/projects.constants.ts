@@ -3,42 +3,35 @@ import type { Project } from "@/types/project.types";
 export const PROJECTS: readonly Project[] = [
   {
     id: "projeto-1",
-    title: "[NOME_DO_PROJETO]",
-    summary: "[RESUMO_DO_PROJETO]",
-    context: "[CONTEXTO_DO_PROJETO]",
-    solution: "[DESCRIÇÃO_REAL_DO_PROJETO]",
-    contribution: "[CONTRIBUIÇÃO_NO_PROJETO]",
+    title: "EducAfro",
+    summary: "propõe uma plataforma educacional inclusiva para reduzir desigualdades, oferecendo cursos de capacitação e um espaço de valorização da cultura negra, promovendo acesso à educação, inclusão social e melhores oportunidades de renda.",
     technologies: ["[TECNOLOGIAS_DO_PROJETO]"],
     imageUrl: "",
     imageAlt: "Placeholder de projeto 1",
-    repositoryUrl: "[URL_DO_REPOSITÓRIO]",
-    liveUrl: "[URL_DO_PROJETO]",
+    repositoryUrl: "https://github.com/PedroBentoDev/Projeto-EducAfro",
+    liveUrl: "https://pedrobentodev.github.io/webdemo/",
     status: "completed"
   },
+
   {
     id: "projeto-2",
-    title: "[NOME_DO_PROJETO_2]",
-    summary: "[RESUMO_DO_PROJETO_2]",
-    context: "[CONTEXTO_DO_PROJETO_2]",
-    solution: "[DESCRIÇÃO_REAL_DO_PROJETO_2]",
-    contribution: "[CONTRIBUIÇÃO_NO_PROJETO_2]",
+    title: "Barbershop-v1.0",
+    summary: "Sistema de gestão para barbearias desenvolvido em Java e Spring Boot, com estrutura para cadastro, validação e gerenciamento de dados.",
     technologies: ["[TECNOLOGIAS_DO_PROJETO]"],
     imageUrl: "",
     imageAlt: "Placeholder de projeto 2",
-    repositoryUrl: "[URL_DO_REPOSITÓRIO]",
+    repositoryUrl: "https://github.com/PedroBentoDev/Barbershop-v1.0",
     status: "in-progress"
   },
-  {
+ {
     id: "projeto-3",
-    title: "[NOME_DO_PROJETO_3]",
-    summary: "[RESUMO_DO_PROJETO_3]",
-    context: "[CONTEXTO_DO_PROJETO_3]",
-    solution: "[DESCRIÇÃO_REAL_DO_PROJETO_3]",
-    contribution: "[CONTRIBUIÇÃO_NO_PROJETO_3]",
+    title: "Agência de viagem",
+    summary: "Aplicação web para agência de viagens, destacando destinos, pacotes e uma navegação responsiva",
     technologies: ["[TECNOLOGIAS_DO_PROJETO]"],
     imageUrl: "",
-    imageAlt: "Placeholder de projeto 3",
-    repositoryUrl: "[URL_DO_REPOSITÓRIO]",
-    status: "study"
-  }
+    imageAlt: "Placeholder de projeto 1",
+    repositoryUrl: "https://github.com/PedroBentoDev/projeto-agencia_de_viagens",
+    liveUrl: "https://pedrobentodev.github.io/projeto-agencia_de_viagens/",
+    status: "completed"
+  },
 ];
