@@ -53,7 +53,7 @@ export function ContactSection() {
 
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-2">
             <a
-              href="mailto:[SEU_EMAIL]"
+              href="pbentomartins4569@gmail.com"
               className="group flex items-center gap-3 rounded-lg p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus"
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border bg-surface-elevated text-text-primary transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
@@ -71,29 +71,10 @@ export function ContactSection() {
               </div>
             </a>
 
+         
+          
             <a
-              href="https://wa.me/[SEU_WHATSAPP]"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-3 rounded-lg p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus"
-            >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border bg-surface-elevated text-text-primary transition-colors group-hover:border-[#25D366] group-hover:bg-[#25D366] group-hover:text-white">
-                <MessageCircle size={20} />
-              </div>
-
-              <div className="min-w-0">
-                <span className="mb-0.5 block text-sm font-medium text-text-muted">
-                  WhatsApp
-                </span>
-
-                <span className="block truncate font-medium text-foreground transition-colors group-hover:text-[#25D366]">
-                  [SEU_WHATSAPP]
-                </span>
-              </div>
-            </a>
-
-            <a
-              href="[URL_DO_LINKEDIN]"
+              href="https://www.linkedin.com/in/pedro-henrique-bento-martins-7b19a733a/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-3 rounded-lg p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus"
@@ -115,7 +96,7 @@ export function ContactSection() {
             </a>
 
             <a
-              href="[URL_DO_GITHUB]"
+              href="https://github.com/PedroBentoDev"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-3 rounded-lg p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus"
