@@ -66,7 +66,7 @@ export function ContactSection() {
                 </span>
 
                 <span className="block truncate font-medium text-foreground transition-colors group-hover:text-primary">
-                  [SEU_EMAIL]
+                  [Pbentomartin4569@gmail.com]
                 </span>
               </div>
             </a>
